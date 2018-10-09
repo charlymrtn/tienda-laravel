@@ -20,7 +20,5 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::middleware(['auth'])->namespace('Products')->group(function() {
-
     Route::resource('products', 'ProductController');
-
 });
